@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* this for logo deben*/
+.containerOverFlue{
+    height: 100vh !important;
+    overflow: hidden;
+}
+.loginDesign{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) -77.3%, rgba(233, 232, 232, 0.124555) 40.98%, rgba(225, 224, 224, 0.0987332) 59.26%, rgba(197, 194, 194, 0) 100%), #1E6EF5;    width: 100%;
+    /* width: 376px !important; */
+    height: 100vh !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.imgContainer{
+    margin: auto;
+    position: absolute;
+    top:120px;
+    text-align: center;
+    color: #E2E2E2;
+    transition: all 0.5s;
+}
+.imgContainer p{
+    margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+    .imgContainer {
+        position: absolute;
+        top: 30px;
+        transition: all 0.5s;
+    }
+    .imgContainer p{
+        position: absolute;
+        top: 100px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .imgContainer {
+        position: absolute;
+        top: 60px;
+        transition: all 0.5s;
+    }
+    .imgContainer p{
+        position: absolute;
+        top: 90px;
+        transition: all 0.5s;
+    }
+  }
+
+.loginDesign img{
+    width: 68%;
+    height: 64px;
+}
+.containerUser{
+    position: absolute;
+    top: 250px;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 10px;
+    width: 330px;
+    height: 52px;
+    box-sizing: border-box;
+    display: flex;
+}
+.containerUser .icon-user-o{
+    position: absolute;
+    left: 18px;
+    top: 15px;
+    color: #FFF;
+    font-size: 20px;
+    width: 376px;
+}
+.containerUser .loginParagraphe{
+    position: absolute;
+    left: 50px ;
+    top: 10px;
+    width: 10% !important;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.1689px;
+    line-height: 32px;
+    /* identical to box height */
+
+    letter-spacing: -0.02em;
+
+    /* white */
+    color: #FFFFFF;
+}
+.icon-eye-slash,
+.icon-eye{
+    position:absolute;
+    right: 25px;
+    top: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 5px;
+}
+.containerUser .icon-circle{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: aliceblue;
+}
+/*  the end here about logoDeben CSS */
+/* the form CSS */
+.containerWelcome{
+    margin: auto;
+}
+.messageGoodMoring{
+    width: 150px;
+    height: 25px;
+    margin: 20px;
+}
+
+.messageGoodMoring h5{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+
+    /* dark blue */
+
+    color: #3A4956;
+
+}
+.contaienrForm{
+    overflow: auto;
+    width: 220px;
+    height: 75vh !important;
+    background: #fff;
+    /* card shadow */
+    box-shadow: -0.5px 0.5px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+.getGelpDiv{
+    width: 100px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.getGelpDiv a{
+    color: #58BEF3;
+    width: 120px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    position: absolute;
+    right:15px ;
+    transition: all 0.5s;
+
+}
+.getGelpDiv span{    
+    color: #58BEF3;
+    position: absolute;
+    right:1px;
+    font-size:22px;
+    /* transition: all 0.3s; */
+}
+@media screen and (max-width: 768px) {
+    .getGelpDiv a {
+        font-size: 19px;
+        position: absolute;
+        right:-10px ;
+        transition: all 0.5s;
+    }
+    .getGelpDiv span{
+        position: absolute;
+        right:16px;
+        top: 5px;
+        transition: all 0.3s;
+
+    }
+  }
+  .messageForget{
+    position: absolute;
+    top: 90px;
+    left: 63px;
+
+}
+.messageForget h1{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+
+    color: #208AE7;
+}
+.messageForget .pargraghpe{
+    position: absolute;
+    top: 70px;
+    width: 55vw;
+}
+@media only screen and (max-width: 768px) {
+    .messageForget{
+        position: absolute;
+        top: 50px;
+    }
+    .messageForget .pargraghpe {
+        position: absolute;
+        top: 95px;
+        width: 55vw;
+        font-size: 400px;
+    }
+    .messageForget h1 {
+        font-size: 30px;
+        
+    }    .messageForget .pargraghpe p {
+        font-size: 15px !important;
+    }
+
+}
+  
+.messageForget .pargraghpe p {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #979797;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.containerForm{
+    width: 94% !important;
+    height: 48px;
+    position: absolute;
+    top: 140px;
+    left: 33px;
+    transition: all 1.4;
+}
+.form-group{
+    margin: 30px;
+}
+
+/* input name & input Password */
+.form-group .inputEmail:focus{
+    box-shadow: none;
+    box-shadow: -0.5px 0.5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+}
+/* input inputEmail */
+.labelEmail{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+.form-group .inputEmail{
+    box-sizing: border-box;
+    background: #FFFFFF;
+    height: 42px !important;
+    /* card shadow */
+    box-shadow: -0.5px 0.5px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.btns{
+    display: flex;
+    position:absolute;
+    top: 140px;
+    right: -10px;
+}
+@media only screen and (max-width: 768px) {
+    .btns {
+        position:absolute;
+        top: 160px;
+        right: 40px;    
+        }
+}
+
+.btns .btn{
+    margin: 0px 4px;
+}
+.contianerNext{
+    position: relative;
+}
+.btns .cancel{
+    padding: 6px 27px;
+    background: #FFFFFF;
+    box-shadow: -0.44px 0.44px 3.75px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    font-family: 'Nunito', sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: capitalize;    
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: capitalize;
+    /* dark blue */
+
+    color: #3A4956;
+}
+.btns .next{
+    padding: 8px 30px;
+    box-shadow: -0.44px 0.44px 7.75px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    font-family: 'Nunito', sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: capitalize;
+    background: #58BEF3;
+    border: none;
+}
+.btns .next .icon-chevron-right{
+    position:absolute;
+    right: 16px;
+    top: 9.80px;
+}
