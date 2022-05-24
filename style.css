@@ -351,7 +351,9 @@
         transition: all 0.7s;
     }
 } 
-
+.btns .btn:focus{
+    box-shadow:none ;
+}
 .btns .btn{
     margin: 0px 4px;
 }
@@ -359,7 +361,8 @@
     position: relative;
 }
 .btns .cancel{
-    padding: 6px 27px;
+    padding: 0.5rem 1.875rem;
+
     background: #FFFFFF;
     -webkit-box-shadow: -0.44px 0.44px 3.75px rgba(0, 0, 0, 0.25);
             box-shadow: -0.44px 0.44px 3.75px rgba(0, 0, 0, 0.25);
@@ -395,10 +398,9 @@
     text-align: center;
     text-transform: capitalize;
     background: #58BEF3;
-    border: none;
 }
 .btns .next .icon-chevron-right{
     position:absolute;
     right: 1rem;
-    top: 0.6125rem;
+    top: 0.78rem;
 }
