@@ -3,7 +3,8 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 /* this for logo deben*/
 .containerOverFlue{
@@ -11,12 +12,18 @@
     overflow: hidden;
 }
 .loginDesign{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(-77.3%, rgba(255, 255, 255, 0.2)), color-stop(40.98%, rgba(233, 232, 232, 0.124555)), color-stop(59.26%, rgba(225, 224, 224, 0.0987332)), to(rgba(197, 194, 194, 0))), #1E6EF5;
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.2) -77.3%, rgba(233, 232, 232, 0.124555) 40.98%, rgba(225, 224, 224, 0.0987332) 59.26%, rgba(197, 194, 194, 0) 100%), #1E6EF5;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) -77.3%, rgba(233, 232, 232, 0.124555) 40.98%, rgba(225, 224, 224, 0.0987332) 59.26%, rgba(197, 194, 194, 0) 100%), #1E6EF5;    width: 100%;
     width: 376px !important;
     height: 100vh !important;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 @media screen and (max-width: 1400px){
 .loginDesign{
@@ -29,6 +36,8 @@
     top: 7.5rem;
     text-align: center;
     color: #E2E2E2;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 .imgContainer p{
@@ -38,6 +47,8 @@
     .imgContainer {
         position: absolute;
         top: 1.875rem;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
         transition: all 0.5s;
     }
     .imgContainer p{
@@ -49,11 +60,15 @@
     .imgContainer {
         position: absolute;
         top: 3.75rem;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
         transition: all 0.5s;
     }
     .imgContainer p{
         position: absolute;
         top: 5.625rem;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
         transition: all 0.5s;
     }
   }
@@ -69,7 +84,10 @@
     border-radius: 0.625rem;
     width: 20.625rem;
     height: 3.25rem;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .containerUser .icon-user-o{
@@ -142,7 +160,8 @@
     height: 75vh !important;
     background: #fff;
     /* card shadow */
-    box-shadow: -0.5px 0.5px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: -0.5px 0.5px 2px rgba(0, 0, 0, 0.25);
+            box-shadow: -0.5px 0.5px 2px rgba(0, 0, 0, 0.25);
     border-radius: 0.625rem;
     margin: auto;
     position: relative;
@@ -161,11 +180,18 @@
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 2.0625rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    text-decoration-line: underline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
     position: absolute;
     right:0.9375rem ;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     /* highlighted blue */
 
@@ -182,6 +208,8 @@
     position: absolute;
     top: 5.625rem;
     left: 3.9375rem;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 
 }
@@ -206,6 +234,8 @@
     .messageForget{
         position: absolute;
         left: 6%;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
         transition: all 0.5s;
     }
     
@@ -229,8 +259,12 @@
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 1.6875rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #979797;
     font-family: 'Nunito', sans-serif;
 }
@@ -241,6 +275,8 @@
     position: absolute;
     top: 7.2rem;
     left: 2.3rem;
+    -webkit-transition: all 1.4;
+    -o-transition: all 1.4;
     transition: all 1.4;
 }
 @media screen and (max-width: 576px) {
@@ -248,6 +284,8 @@
         width: 94%!important;
         position: absolute;
         left: 3%;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
         transition: all 0.4s;
     }
 } 
@@ -259,8 +297,10 @@
 
 /* input name & input Password */
 .form-group .inputEmail:focus{
-    box-shadow: none;
-    box-shadow: -0.5px 0.5px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-box-shadow: -0.5px 0.5px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: -0.5px 0.5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 0.625rem;
 
 }
@@ -271,31 +311,43 @@
     font-weight: 300;
     font-size: 0.875rem;
     line-height: 1.1875rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-transform: capitalize;
 }
 .form-group .inputEmail{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background: #FFFFFF;
     height: 3rem !important;
     /* card shadow */
-    box-shadow: -0.5px 0.5px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: -0.5px 0.5px 2px rgba(0, 0, 0, 0.25);
+            box-shadow: -0.5px 0.5px 2px rgba(0, 0, 0, 0.25);
     border-radius: 0.625rem;
     padding: 0.5rem;
 }
 
 .btns{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position:absolute;
     top: 18rem;
     right: -0.625rem;
+    -webkit-transition: all 0.7s;
+    -o-transition: all 0.7s;
     transition: all 0.7s;
 }
 @media screen and (max-width: 1200px) {
     .btns{
         position:absolute;
         top: 15rem;
+        -webkit-transition: all 0.7s;
+        -o-transition: all 0.7s;
         transition: all 0.7s;
     }
 } 
@@ -309,7 +361,8 @@
 .btns .cancel{
     padding: 6px 27px;
     background: #FFFFFF;
-    box-shadow: -0.44px 0.44px 3.75px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: -0.44px 0.44px 3.75px rgba(0, 0, 0, 0.25);
+            box-shadow: -0.44px 0.44px 3.75px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
     font-family: 'Nunito', sans-serif; 
     font-style: normal;
@@ -329,7 +382,8 @@
 }
 .btns .next{
     padding: 0.5rem 1.875rem;
-    box-shadow: -0.44px 0.44px 7.75px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: -0.44px 0.44px 7.75px rgba(0, 0, 0, 0.25);
+            box-shadow: -0.44px 0.44px 7.75px rgba(0, 0, 0, 0.25);
     border-radius: 0.4375rem;
     font-family: 'Nunito', sans-serif; 
     font-style: normal;
